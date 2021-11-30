@@ -13,23 +13,20 @@
     margin: 0 30px;
 }
 
-#all:checked ~ .block.content,
-#html:checked ~ .block.content1,
-#css:checked ~ .block.content2,
-#js:checked ~ .block.content3 {
+#all:checked ~ .block.content{
     display: block;
 }
 
 #html:checked ~ .block .content-1 {
-    display: none;
+    display: flex;
 }
 
 #css:checked ~ .block .content-2 {
-    display: none;
+    display: flex;
 }
 
 #js:checked ~ .block .content-3 {
-    display: none;
+    display: flex;
 }
 
 .block {
