@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.content {
+    display: none;
+    margin: 0 30px;
+}
+
+#all:checked ~ .block.content,
+#html:checked ~ .block.content1,
+#css:checked ~ .block.content2,
+#js:checked ~ .block.content3 {
+    display: block;
+}
+
+#html:checked ~ .block .content-1 {
+    display: none;
+}
+
+#css:checked ~ .block .content-2 {
+    display: none;
+}
+
+#js:checked ~ .block .content-3 {
+    display: none;
+}
+
+.block {
+    display: flex;
+}
+
+.content-img {
+    width: 150px;
+    height: 150px;
+}
+
+.radio {
+    opacity: 0;
+
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons label{
+    margin: 0 10px;
+}
